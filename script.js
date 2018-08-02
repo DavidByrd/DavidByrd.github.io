@@ -27,13 +27,16 @@ function showSlides(n) {
 }
 
 
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-      x.className += " responsive";
+function toggleTopNav() {
+  const topNav = document.getElementById("myTopnav");
+  if (topNav.className === "topnav") {
+      topNav.className += " responsive";
   } else {
-      x.className = "topnav";
+      topNav.className = "topnav";
   }
+
+
+}
 
   let modal = document.querySelector(".modal");
   let trigger = document.querySelector(".trigger");
@@ -52,4 +55,3 @@ function myFunction() {
   trigger.addEventListener("click", toggleModal);
   closeButton.addEventListener("click", toggleModal);
   window.addEventListener("click", windowOnClick);
-}

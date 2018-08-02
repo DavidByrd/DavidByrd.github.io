@@ -3,9 +3,10 @@
 <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
+
 <body>
     
     
@@ -15,17 +16,17 @@
     </header>
     
     <img src="Columbus.jpg" alt="cityscape" class="cityscape">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <div class="topnav" id="myTopnav">
+
+    <nav class="topnav" id="myTopnav">
           
           <a href="#Skills">Skills</a>
           <a href="#contact-info">Contact-Info</a>
           <a href="#links">Links</a>
           <a href="#Projects">Projects</a>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <a href="javascript:void(0);" class="icon" onclick="toggleTopNav()">
                 <i class="fa fa-bars"></i>
           </a>
-          </div>
+          
       </nav>
       <main>
           <img src="IMG_1703_pp.jpg" alt="me" class="me">
@@ -37,7 +38,7 @@
           </p>
 
           <button class="trigger">Click here to learn more about me!</button>
-  <div class="modal">
+  <div class="modal show-modal">
       <div class="modal-content">
           <span class="close-button">&times;</span>
           <h1>I was born and raised In Columbus Ohio and Im a proud buckey</h1>
